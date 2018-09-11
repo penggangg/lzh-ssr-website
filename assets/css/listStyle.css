@@ -1,0 +1,494 @@
+/*内容*/
+
+.serachHouse {
+  background: #f5f5f6;
+  padding: 15px 0;
+}
+
+.serachHouse p.nowL>a {
+  color: #330033;
+  font-size: 12px;
+}
+
+.serachHouse .reason {
+  margin: 15px 0;
+  font-family: "微软雅黑";
+}
+
+.serachHouse .reason .sear {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+}
+
+.serachHouse .reason .sear input {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+
+.serachHouse .reason .sear input[type=text] {
+  width: 800px;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 30px;
+  border: none;
+}
+
+.serachHouse .reason .sear .searicon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 6;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon.png) no-repeat -47px 0;
+}
+
+.serachHouse .reason>a {
+  display: inline-block;
+  color: #330033;
+  float: right;
+  margin-top: 15px;
+}
+
+.serachHouse .searching {
+  text-indent: 28px;
+  font-size: 12px;
+  color: #666;
+}
+
+.serachHouse .searching a {
+  color: #330033;
+  margin-left: 15px;
+}
+
+/*筛选条件*/
+
+.filter {
+  padding: 20px 0 30px;
+}
+
+.filter .allfil {
+  padding-bottom: 15px;
+}
+
+/*.filter dl{}*/
+
+.filter dl dt,
+.filter dl dd {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter dl dt {
+  width: 52px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.filter dl dd a,
+.filter dl dd div
+ {
+  float: left;
+  margin-right: 34px;
+  color: #666;
+  line-height: 30px;
+  font-size: 12px;
+  text-shadow: 0px 0px 0px #ddd;
+}
+
+.filter dl dd a.area_cot,
+.filter dl dd a.pg_area {
+  margin-right: 0;
+}
+
+.filter dl dd a.current {
+  color: #330033;
+  font-weight: bold;
+}
+
+.filter dl dd a input[type=text],
+.filter dl dd div input[type=text],
+.filter dl dd div input[type=button],
+.filter dl dd a input[type=button] {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+}
+
+.filter dl dd a input[type=text],
+.filter dl dd div input[type=text]
+{
+  width: 50px;
+  text-indent: 2px;
+}
+.filter .price_btn{
+	float:none;
+	display:inline-block;
+	height: 22px;
+	line-height: 22px;
+}
+.filter dl dd a input[type=button],
+.filter dl dd div input[type=button],
+.filter .price_btn {
+  width: 35px;
+  text-align: center;
+  background: #330033;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.filter dl dd a.checkBox input[type=checkbox] {
+  vertical-align: normal;
+}
+
+.filter dl dd a.checkBox label {
+  top: 10px;
+}
+
+.filter a.moreOther {
+  display: block;
+  text-align: center;
+  margin: 10px 0 6px;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all .5s ease;
+  height: 120px;
+  /* transform: translateY(120px); */
+}
+.slide-fade-leave-active {
+  transition: all .4s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  /* transform: translateY(0); */
+  height: 0;
+  opacity: 0;
+}
+/*.filter .otherTerm{display:none;}*/
+
+/*已选择*/
+
+.filter .selected {
+  background: #f5f5f6;
+  padding: 14px 15px;
+  font-weight: 700;
+}
+
+.filter .selected .choice {
+  display: inline-block;
+  max-width: 1010px;
+  vertical-align: top;
+  color: #333;
+  margin-left: 18px;
+}
+
+.filter .selected .choice span {
+  float: left;
+  color: #330033;
+  font-weight: normal;
+  margin: 0 10px 2px;
+}
+
+.filter .selected .choice a i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icon.png) no-repeat -76px 0;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.filter .selected>a.clear {
+  display: inline-block;
+  color: #999;
+}
+
+/*已找到房源*/
+
+.find {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efdb9f;
+}
+
+.find>div {
+  float: left;
+  color: #999;
+}
+
+.find>div h4 {
+  font-size: 16px;
+  color: #000;
+  padding-right: 25px;
+}
+
+.find>div h4 b {
+  color: red;
+}
+
+.find>div h4,
+.find>div p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.find>div p {
+  padding-left: 25px;
+}
+
+.find>div p a {
+  display: inline-block;
+  font-size: 12px;
+  color: #666;
+  margin-right: 36px;
+}
+
+.find>div p a.current {
+  color: #330033;
+}
+
+.find a i {
+  display: inline-block;
+  background: url(../img/icon.png) no-repeat;
+  vertical-align: top;
+}
+
+.find>div p a i {
+  width: 9px;
+  height: 12px;
+  background-position: -173px -173px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.find>a {
+  float: right;
+  font-size: 14px;
+  color: #330033;
+}
+
+.find>a i {
+  width: 15px;
+  height: 17px;
+  background-position: -12px -20px;
+  margin-right: 4px;
+}
+
+/*房源列表*/
+
+/*.contBox{border-top:1px solid #ddd;}*/
+
+.contBox .contList {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.contList>a,
+.contList>div {
+  float: left;
+}
+
+.contList>a.listImg {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.contList>a.listImg img {
+  width: 100%;
+  height: 200px;
+}
+
+.contList>div {
+  width: 850px;
+}
+
+.contList>div .leftSize {
+  float: left;
+  width: 600px;
+  font-family: "微软雅黑";
+}
+
+.contList>div .leftSize>h3 {
+  font-size: 0;
+  font-style: normal;
+}
+
+.contList>div .leftSize h3 a {
+  display: block;
+  margin-bottom: 26px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  font-family: "微软雅黑", "arial";
+}
+
+.contList>div .leftSize ul li {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+.contList>div .leftSize ul li:first-child i {
+  color: #333;
+}
+
+.contList>div .leftSize ul li b {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/icon.png) no-repeat;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.contList>div .leftSize ul li s.question {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/icon.png) no-repeat -120px -24px;
+  vertical-align: top;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.contList>div .leftSize ul li b.dw {
+  width: 13px;
+  height: 17px;
+  background-position: -162px -0px;
+  margin-right: 6px;
+}
+
+.contList>div .leftSize ul li b.js {
+  width: 16px;
+  height: 16px;
+  background-position: -33px -24px;
+}
+
+.contList>div .leftSize ul li b.dz {
+  background-position: -55px -23px;
+}
+
+.contList>div .leftSize ul li b.zz {
+  background-position: -77px -22px;
+}
+
+.contList>div .leftSize ul li i {
+  padding: 0 12px;
+  color: #474747;
+}
+
+.contList>div .leftSize p.label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contList>div .leftSize p.label label {
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 15px;
+  border: 1px solid #330033;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.contList>div .rightCern {
+  float: right;
+  text-align: right;
+  margin-top: 45px;
+  font-family: "微软雅黑";
+}
+
+.contList>div .rightCern li {
+  margin-bottom: 50px;
+}
+
+.contList>div .rightCern li:last-child {
+  margin-bottom: 0;
+  color: #999;
+}
+
+.contList>div .rightCern li span {
+  display: block;
+  font-size: 24px;
+  color: #fe0019;
+  margin-bottom: 10px;
+}
+
+.contList>div .rightCern li b {
+  display: block;
+  height: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.contList>div .rightCern li a {
+  display: block;
+  line-height: 22px;
+}
+
+.contList>div .rightCern li a i.threeD {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon.png) no-repeat -100px -23px;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+
+.contBox .page-box {
+  padding: 40px 0;
+  text-align: center
+}
+
+/*一手列表 待做*/
+
+/*.quickFilter{margin-top:15px;}
+.quickFilter p{display:inline-block;max-width:1020px;}
+.quickFilter p a{height:30px;line-height: 30px;margin-right:20px;}
+.quickFilter p a input[type=checkbox]{margin-right:4px;}*/
+
+.contList>div .oneIdent h3 a {
+  display: inline-block;
+  max-width: 450px;
+}
+
+.contList>div .oneIdent h3 b {
+  display: inline-block;
+  width: 132px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 13px;
+  background: url(../img/icon.png) 0px -45px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 12px;
+  color: #666;
+}
+
+/*一手查看地图标签 lookMap*/
+
+.contList>div .leftSize ul li a.lookMap {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.intrH {
+  border-top: 1px solid #ddd;
+}

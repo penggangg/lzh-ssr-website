@@ -1,0 +1,111 @@
+.autocomplete-suggestions {
+	background: #fff;
+	border: 1px solid #ccc;
+	overflow-y: scroll;
+}
+.autocomplete-suggestions::-webkit-scrollbar {
+    display: none;
+}
+.autocomplete-suggestion {
+	font-size: 16px;
+	padding: 10px 0 10px 10px;
+	cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+	background: #ccc;
+}
+
+.special {
+	background: #EFDB9F;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 20px;
+	left: -42px;
+	transform: rotate(-45deg);
+	color: #000;
+	height: 24px;
+	line-height: 24px;
+}
+
+.history_cot {
+	background: #fff;
+	border-radius: 4px;
+	padding-left: 15px;
+	font-size: 14px;
+	padding-right: 15px;
+	padding-top: 10px;
+	width: 54%;
+	position: absolute;
+    width: 781px;
+    border: 1px solid rgb(226, 226, 226);
+    box-sizing: content-box;
+    padding-right: 3px;
+	display: none;
+}
+
+.history_cot ul {
+	max-height: 168px;
+	overflow-y: scroll;
+	display: block;
+    min-height: 40px;
+	overflow: hidden;
+}
+
+.history_cot span {
+	color: #BCBCBC;
+	display: inline-block;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.history_cot ul li {
+	padding: 8px 0;
+	cursor: pointer;
+}
+
+.selected i {
+	cursor: pointer;
+}
+.pg_districtName{
+	display: inline-block;
+    height: 20px;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.clear_history{
+	float: right;
+    color: #333;
+    cursor: pointer;
+}
+.pg_nav_city{
+	display: none;
+	position: absolute;left: 130px;top:27px;background: #fff;z-index: 999;padding: 3px;height: 126px;overflow: hidden;border:1px solid #ccc; border-top:3px solid #330033
+}
+.pg_nav_area{
+	position: absolute; left: 205px; top: 27px; background: rgb(255, 255, 255); z-index: 999; padding: 3px; max-height: 126px; min-height: 93px; overflow: hidden; border-width: 3px 1px 1px; border-style: solid; border-color: rgb(51, 0, 51) rgb(204, 204, 204) rgb(204, 204, 204); border-image: initial; 
+	display: none;
+	flex-flow:column wrap;
+	
+}
+.pg_nav_city li,.pg_nav_area li{
+	padding:3px 2px;
+}
+.pg_nav_area li{
+	max-width:84px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pg_nav_city li a:hover{
+	color: #330033;
+	font-weight: bold;
+}
+.pg_nav_area li a:hover{
+	color: #330033;
+	font-weight: bold;
+}

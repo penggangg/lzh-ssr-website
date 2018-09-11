@@ -1,0 +1,1129 @@
+.locating {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  z-index: 4;
+}
+
+.locating>p {
+  float: left;
+  margin-top: 6px;
+}
+
+.locating>p a {
+  color: #330033;
+}
+
+.locating .search {
+  float: right;
+  position: relative;
+  float: right;
+  width: 380px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ddd;
+  box-shadow: 0px -1px 2px -1px #ddd;
+}
+
+.locating .search input[type=text] {
+  display: inline-block;
+  width: 326px;
+  height: 38px;
+  line-height: 38px;
+  border: none;
+  text-indent: 40px;
+}
+
+.locating .search input[type=button] {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 6;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon.png) no-repeat -47px 0;
+}
+
+
+/*楼盘户型*/
+
+.roomBox {
+  margin-bottom: 20px;
+}
+
+.roomBox .roomImg {
+  float: left;
+  width: 615px;
+  height: 508px;
+}
+
+.roomBox .roomInfo {
+  float: right;
+  width: 540px;
+}
+
+.roomBox .roomInfo h3 {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color:#333;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.roomBox .roomInfo .icon {
+  margin: 10px 0;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+}
+
+
+/*.roomBox .roomInfo .icon a{display:inline-block;width:26px;height:26px;
+background:url(../img/icon.png) no-repeat;margin-left:18px;}*/
+
+.roomBox .roomInfo .icon a.icon1 {
+  background-position: -26px -186px;
+}
+
+
+/*.roomBox .roomInfo .icon a.icon2{background-position:-155px -42px;}
+.roomBox .roomInfo .icon a.icon3{background-position:-26px -186px;}*/
+
+.roomBox .roomInfo .icon a.icon4 {
+  background-position: -56px -186px;
+}
+
+.roomBox .roomInfo .pri {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.roomBox .roomInfo .pri h5,
+.roomBox .roomInfo .pri>p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.roomBox .roomInfo .pri h5 {
+  font-size: 42px;
+  font-weight: bold;
+  /* color: #fe0019; */
+  color: #f00018;
+}
+
+.roomBox .roomInfo .pri h5 i {
+  font-weight: bold;
+}
+/*.roomBox .roomInfo .pri h5 i {
+  font-size: 26px;
+  font-weight: bold;
+}*/
+
+.roomBox .roomInfo .pri>p {
+  margin-left: 54px;
+  font-size: 14px;
+  color: #333;
+}
+
+.roomBox .roomInfo .pri>p span {
+  display: block;
+  margin: 6px 0px;
+}
+
+.roomBox .roomInfo .pri>p span b {
+  color: #999;
+}
+
+.roomInfo .buildPar {
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.roomInfo .buildPar ul {
+  margin-bottom: 16px;
+  color: #999;
+}
+
+.roomInfo .buildPar ul li {
+  float: left;
+  width: 130px;
+  /* margin-right: 15px; */
+}
+
+.roomInfo .buildPar ul li:last-child {
+  margin-right: 0;
+}
+
+.roomInfo .buildPar ul:first-child li {
+  font-size: 14px;
+  color: #333;
+}
+
+.roomInfo .buildPar ul li i.ques {
+  display: inline-block;
+  width: 17px;
+  height: 15px;
+  background: url(../img/icon.png) no-repeat no-repeat -119px -24px;
+  vertical-align: top;
+}
+
+.roomInfo .buildPar p label {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 8px;
+  margin-right: 15px;
+  border: 1px solid #330033;
+  color: #330033;
+}
+
+.roomInfo>dl {
+  margin-top: 22px;
+}
+
+.roomInfo>dl dt,
+.roomInfo>dl dd {
+  float: left;
+  margin-right: 24px;
+}
+
+.roomInfo>dl dt {
+  width: 82.5px;
+  height: 110px;
+}
+
+.roomInfo>dl dt a,
+.roomInfo>dl dt img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  border-radius: 100%;
+}
+
+.roomInfo>dl dd div h5 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.roomInfo>dl dd div h5 b {
+  margin-left: 18px;
+}
+
+.roomInfo>dl dd div b {
+  font-size: 12px;
+  color: #666;
+}
+
+.roomInfo>dl dd div>b {
+  display: block;
+}
+
+.roomInfo>dl dd div p {
+  font-size: 28px;
+  color: #f00018;
+  margin: 5px 0;
+}
+
+.roomInfo>dl dd div p i {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  background: url(../img/icon.png) no-repeat no-repeat 0px -76px;
+}
+
+
+/*房源描述*/
+
+.decscri {
+  padding: 30px 0;
+}
+
+.decscri h4 {
+  font-size: 18px;
+  color: #330033;
+  margin-bottom: 30px;
+  font-family: "微软雅黑";
+  font-weight: 700
+}
+
+.decscri h4 b.borderIcon {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: #330033;
+  margin-top: 4px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.decscri .infoCont dl {
+  margin-bottom: 18px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.decscri .infoCont dl dt {
+  display: inline-block;
+  width: 32px;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.decscri .infoCont dl dt img {
+  width: 100%;
+  height: 32px;
+}
+
+.decscri .infoCont dl dd {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+}
+
+.decscri .infoCont dl dd span,
+.decscri .infoCont dl dd b {
+  display: inline-block;
+  width: 900px;
+  font-size: 14px;
+}
+
+.decscri .infoCont dl dd span {
+  font-size: 14px;
+  width: 56px;
+  margin-right: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.decscri .infoCont .more {
+  width: 76px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+/*户型信息*/
+
+
+/* .buildNews{background:#f5f5f6;} */
+
+.buildNews .decscri h4 span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.buildNews .decscri h4 span i {
+  color: #fe0019;
+}
+
+.newsCont .leftImg {
+  float: left;
+  width: 620px;
+  height: 390px;
+  background: #cfd9d1;
+}
+
+.newsCont .leftImg .smaImg {
+  position: relative;
+  width: 270px;
+  height: 360px;
+  border: 1px solid #ddd;
+  margin: 14px auto;
+}
+
+.newsCont .leftImg .smaImg>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.newsCont .leftImg .smaImg b {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.newsCont .leftImg .smaImg b img {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 7px auto;
+}
+
+.newsCont .rightPoint {
+  float: right;
+  width: 520px;
+  height: 390px;
+}
+
+.newsCont .rightPoint img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*看房记录*/
+
+.seeBuild h4 p {
+  /* float: right; */
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+.seeBuild h4 p i {
+  color: #fe0019;
+  margin: 0 4px;
+  font-weight: bold;
+}
+.seeRec>div span.circle {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0px 34px 0 20px;
+  background: url('../img/timeline.png') no-repeat;
+}
+.seeRec>div span.circle b {
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  height: 111px;
+  border-left: 2px solid #DDD;
+  vertical-align: middle;
+}
+
+.seeRec>div ul {
+  display: inline-block;
+  width: 1108px;
+  padding: 27px 0;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.seeRec>div ul li {
+  display: inline-block;
+  width: 208px;
+  margin-right: -3px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seeRec>div ul li.width_265 {
+  width: 265px;
+  position: relative;
+  overflow: inherit;
+  font-weight: bold;
+}
+
+.seeRec>div ul li.width_265 strong {
+  font-weight: 600;
+}
+
+.seeRec>div ul li.width_265 .four_sao {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  font-size: 12px;
+  border: 1px solid red;
+  border-radius: 14px;
+  padding: 1px 6px;
+}
+
+.seeRec>div ul li img {
+  display: block;
+  width: 60px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.seeRec>div ul li:last-child {
+  color: #fe0019;
+  font-size: 18px;
+}
+
+.seeRec>div ul li b {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-right: 14px;
+  background: url(../img/icon.png) no-repeat no-repeat 0px -76px;
+  vertical-align: middle;
+}
+
+.seeBuild .page-box {
+  padding-top: 30px;
+  text-align: right;
+}
+
+
+/*楼盘信息*/
+
+.buildXX .buildScro,
+.buildXX .buildInfo {
+  float: left;
+}
+
+.buildXX .buildScro {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.buildXX .buildScro b {
+  position: absolute;
+  top: 175px;
+  width: 70px;
+  height: 70px;
+  background: url(../img/icon.png) no-repeat no-repeat;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.buildXX .buildScro b.prev {
+  left: 10px;
+  background-position: -31px -75px;
+}
+
+.buildXX .buildScro b.next {
+  right: 10px;
+  background-position: -109px -75px;
+}
+
+.buildXX .buildScro ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.buildXX .buildScro ul li {
+  float: left;
+  width: 600px;
+  height: 400px;
+}
+
+.buildXX .buildScro ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.buildXX .buildInfo {
+  width: 550px;
+  height: 420px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.buildXX .buildInfo ul {
+  padding-top: 33px;
+}
+
+.buildXX .buildInfo li {
+  padding-bottom: 24px;
+  margin: 0 40px;
+  font-family: "微软雅黑";
+}
+
+
+/*.buildXX .buildInfo li:first-child{padding-bottom: 16px;margin-bottom: 16px;border-bottom: 1px dashed #333;}*/
+
+.buildXX .buildInfo li p {
+  float: left;
+  width: 198px;
+  font-size: 14px;
+}
+
+.buildXX .buildInfo li p.leng {
+  float: none;
+  width: 100%;
+}
+
+.buildXX .buildInfo li p:last-child {
+  float: right;
+  margin-left: 60px;
+}
+
+.buildXX .buildInfo li p span {
+  display: inline-block;
+  width: 72px;
+  text-align: justify;
+}
+
+
+/*周边配套*/
+
+.ground {
+  border-bottom: 1px solid #330033;
+}
+
+.ground p {
+  margin-bottom: 20px;
+}
+
+.ground p span {
+  float: left;
+  margin-right: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "微软雅黑";
+  /* padding: 0 0 10px 0; */
+  height: 32px;
+}
+
+.ground p span.current {
+  color: #330033;
+  font-weight: bold;
+  border-bottom: 2px solid #330033
+}
+
+.ground strong {
+  float: right;
+  font-size: 16px;
+  color: #330033;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ground strong i {
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  margin-right: 10px;
+  background: url(../img/icon.png) no-repeat no-repeat -180px 0px;
+  vertical-align: middle;
+}
+
+.mapBox {
+  width: 100%;
+  height: 442px;
+}
+
+.mapBox>img {
+  width: 100%;
+  height: 442px;
+}
+
+/* 楼盘顾问修改 */
+
+.bar-slide {
+  position: absolute;
+  right: calc((100% - 1180px)/ 2);
+  top: 720px;
+}
+
+.barslide-f {
+  position: fixed;
+  right: calc((100% - 1180px)/ 2);
+  top: 140px;
+}
+
+.slidesell {
+  width: 300px;
+  height: 327px;
+  background: #fff;
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), -2px 0 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+}
+
+.slidesell .title {
+  width: 300px;
+  height: 50px;
+  background: rgba(221, 52, 65, 1);
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(239, 219, 159, 1);
+}
+
+.slidesell .cus {
+  display: flex;
+  height: 113px;
+  margin-top: 25px;
+  padding-left: 25px;
+}
+
+.slidesell .cus:not(:last-child) {
+  border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+
+.slidesell .cus div:first-child {
+  margin-right: 15px;
+}
+
+.slidesell .cus img {
+  width: 66px;
+  height: 88px;
+}
+
+.slidesell .cus a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.slidesell .cus b {
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.slidesell .cus p {
+  width: 132px;
+  height: 34px;
+  font-size: 12px;
+  color: rgba(153, 153, 153, 1);
+  line-height: 17px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.slidesell .cus span:first-child{
+  color: #333333;
+}
+.slidesell .cus span {
+  width: 174px;
+  height: 16px;
+  font-size: 16px;
+  color: rgba(254, 0, 25, 1);
+  line-height: 16px;
+  font-weight: bold;
+}
+
+
+
+/*楼盘咨询 顾问悬浮*/
+
+.conIcon {
+  position: fixed;
+  bottom: 22px;
+  left: 0;
+  z-index: 90;
+  width: 50px;
+  height: 77px;
+}
+
+.conIcon>img {
+  width: 100%;
+  height: 77px;
+}
+
+
+
+
+.consult {
+  position: fixed;
+  bottom: 0px;
+  left: -100%;
+  z-index: 88;
+  width: 100%;
+  padding: 6px 0;
+  background: rgba(64, 64, 64, 0.9);
+}
+
+.consult>div {
+  position: relative;
+}
+
+.consult>div>b.close {
+  position: absolute;
+  top: 0px;
+  right: -55px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.consult>div .cus {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.consult>div .cus:nth-of-type(1) {
+  border-right: 1px solid #999;
+}
+
+.consult>div dl {
+  width: 380px;
+  margin: 0 auto;
+}
+
+.consult>div dt,
+.consult>div dt a,
+.consult>div dt img {
+  width: 66px;
+  height: 88px;
+  border-radius: 100%;
+}
+
+.consult>div dt {
+  float: left;
+}
+
+.consult>div dd {
+  float: left;
+  margin-left: 14px;
+}
+
+.consult>div dd div a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  text-shadow: 0px 0px 0px #ddd;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+
+.consult>div dd div a b {
+  display: inline-block;
+  padding: 0 6px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 12px;
+  background: rgba(239, 219, 159, 0.3);
+  font-size: 12px;
+  color: #efdb9f;
+  text-align: center;
+}
+
+.consult>div dd div p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 8px 0;
+
+  font-family: "微软雅黑";
+}
+
+.consult>div dd div strong {
+  font-size: 16px;
+  color: #fe0019;
+  margin: 0 6px;
+}
+
+.consult>div dd div span {
+  font-size: 20px;
+  color: #efdb9f;
+}
+
+.consult>div dd div span i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icon.png) no-repeat 0px -102px;
+  margin-right: 10px;
+}
+
+.consult>div dd div span e {
+  font-size: 14px;
+  border: 1px solid #efdb9f;
+  padding: 1px 6px;
+  border-radius: 12px;
+}
+
+
+/*楼盘咨询顾问悬浮内容*/
+
+.showBtnL {
+  animation: showBtnL 0.8s forwards;
+  -webkit-animation: showBtnL 0.8s forwards;
+  -moz-animation: showBtnL 0.8s forwards;
+  -o-animation: showBtnL 0.8s forwards;
+}
+
+@keyframes showBtnL {
+  from {
+      left: 98%;
+      border-radius: 0;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+  }
+  to {
+      left: 0;
+      border-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+  }
+}
+
+.showAnima {
+  animation: showAnima 0.8s forwards;
+  -webkit-animation: showAnima 0.8s forwards;
+  -moz-animation: showAnima 0.8s forwards;
+  -o-animation: showAnima 0.8s forwards;
+}
+
+@keyframes showAnima {
+  from {
+      left: -100%;
+      opacity: 0.8;
+  }
+  to {
+      left: 0;
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes showAnima {
+  from {
+      left: -100%;
+      opacity: 0.8;
+  }
+  to {
+      left: 0;
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes showAnima {
+  from {
+      left: -100%;
+      opacity: 0.8;
+  }
+  to {
+      left: 0;
+      opacity: 1;
+  }
+}
+
+@-o-keyframes showAnima {
+  from {
+      left: -100%;
+      opacity: 0.8;
+  }
+  to {
+      left: 0;
+      opacity: 1;
+  }
+}
+
+.hideAnima {
+  animation: hideAnima 0.8s forwards;
+  -webkit-animation: hideAnima 0.8s forwards;
+  -moz-animation: hideAnima 0.8s forwards;
+  -o-animation: hideAnima 0.8s forwards;
+}
+
+@keyframes hideAnima {
+  from {
+      left: 0;
+      opacity: 1;
+  }
+  to {
+      left: -100%;
+      opacity: 0.8;
+  }
+}
+
+@-moz-keyframes hideAnima {
+  from {
+      left: 0;
+      opacity: 1;
+  }
+  to {
+      left: -100%;
+      opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes hideAnima {
+  from {
+      left: 0;
+      opacity: 1;
+  }
+  to {
+      left: -100%;
+      opacity: 0.8;
+  }
+}
+
+@-o-keyframes hideAnima {
+  from {
+      left: 0;
+      opacity: 1;
+  }
+  to {
+      left: -100%;
+      opacity: 0.8;
+  }
+}
+
+.bookimgRoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.roomCont {
+  /* position: absolute;
+  top: 180px;
+  left: 50%;
+  margin-left: -230px; */
+  padding: 44px 0;
+  /* width: 460px; */
+  text-align: center;
+  /* background: #fff; */
+}
+
+.roomCont>b.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.roomCont h5 {
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+
+.roomCont>input {
+  display: block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  margin: 20px auto 0;
+}
+
+.roomCont>input.txt {
+  background: #f3f3f3;
+  text-indent: 16px;
+}
+
+.roomCont>input.btn {
+  background: #330033;
+  color: #fff;
+}
+
+.pg_right_item {
+  display: inline-block;
+  width: 390px;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+
+/*底部 二维码的布局 */
+
+.cus {
+  position: relative
+}
+
+.cus .four_ewm {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  display: none;
+  border: 8px solid #fff;
+  border-radius: 10px;
+}
+
+.width_265 .gunwen_ewm {
+  position: absolute;
+  right: -7px;
+  top: 32px;
+  border: 8px solid #fff;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+
+/* 维护人的样式 */
+
+.roomInfo .maintainer {
+  position: relative;
+}
+.roomInfo .maintainer strong {
+  font-weight: bold;
+}
+
+.roomInfo .maintainer .four_sao {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  font-size: 12px;
+  border: 1px solid red;
+  border-radius: 14px;
+  padding: 1px 6px;
+}
+
+.roomInfo .maintainer .four_ewm {
+  position: absolute;
+  display: none;
+  border: 8px solid #fff;
+  border-radius: 10px;
+  right: -12px;
+  top: -83px;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+/*3D 看房*/
+
+.btn3D {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+  width: 65px;
+  height: 28px;
+  font-size: 12px;
+  color: rgba(51, 0, 51, 1);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  text-align: center;
+  line-height: 28px;
+  display: none;
+}

@@ -1,0 +1,1153 @@
+/*一手*/
+
+.locating {
+  padding-bottom: 10px;
+}
+
+.locating > p {
+  color: #fff;
+}
+
+.onehandBox {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+.onehandBox .oneHandFocus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+}
+
+.onehandBox .oneHandFocus > div {
+  width: 100%;
+  height: 480px;
+}
+
+.onehandBox .oneHandFocus > div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: url(" ") center center no-repeat; */
+  min-width: 1220px;
+  height: 480px;
+  background-size: cover;
+}
+
+.project p.album {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 10;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.project p.album span {
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  margin-top: 9px;
+  margin-right: 10px;
+  background: url('../img/icon.png') no-repeat -185px -148px;
+  vertical-align: top;
+}
+
+/*搜索*/
+
+.onehandBox .locating > p a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.onehandBox .locating .search {
+  background: #fff;
+}
+
+/*项目介绍*/
+
+.project {
+  position: relative;
+  z-index: 4;
+}
+
+.project .proInfo {
+  position: relative;
+  float: left;
+  width: 314px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.project .proInfo .proBtn {
+  position: absolute;
+  top: 0;
+  left: -139px;
+  z-index: 4;
+  width: 139px;
+  height: 30px;
+  line-height: 30px;
+  background: url(../img/icon.png) no-repeat 0px -151px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project .proInfo .proCont {
+  position: absolute;
+  top: 0;
+  /*left:-314px;*/
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.project .proInfo .proCont > b.slide {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  z-index: 5;
+  line-height: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.proInfo .proCont .selling {
+  position: relative;
+  padding: 24px 0 16px 20px;
+  background: rgba(51, 51, 51, 0.9);
+  color: #fff;
+}
+
+.proInfo .proCont .selling > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 6px;
+  background: #666;
+  color: #fff;
+}
+
+.proInfo .proCont .selling h5 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+/* 免佣金	 */
+
+.proInfo .proCont .selling h5 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.proInfo .proCont .selling h5 .name {
+  display: inline-block;
+  max-width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.proInfo .proCont .selling h5 .nocommission {
+  display: inline-block;
+  width: 52px;
+  height: 20px;
+  background: #c72433;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.proInfo .proCont .selling p b {
+  font-size: 16px;
+  color: #efdb9f;
+  font-weight: bold;
+}
+
+.proInfo .proCont .sellCont {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.proInfo .proCont .sellCont ul {
+  padding: 0 20px;
+}
+
+.proInfo .proCont .sellCont li {
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  font-family: '微软雅黑';
+  color: #000;
+}
+
+.proInfo .proCont .sellCont li:last-child {
+  border-bottom: 0;
+}
+
+.proInfo .proCont .sellCont li label {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  border: 1px solid #330033;
+  font-size: 12px;
+  color: #330033;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.proInfo .proCont .sellCont li label:last-child {
+  margin-right: 0;
+}
+
+.proInfo .proCont .sellCont li a {
+  display: block;
+  font-family: '微软雅黑';
+  color: #000;
+}
+
+.proInfo .proCont .sellCont li span {
+  display: inline-block;
+  width: 52px;
+}
+
+.proInfo .proCont .sellCont li i {
+  display: inline-block;
+  width: 13px;
+  height: 17px;
+  margin: 0 7px;
+  background: url(../img/icon.png) no-repeat;
+  vertical-align: middle;
+}
+
+.proInfo .proCont .sellCont li i.qw {
+  background-position: -184px -109px;
+}
+
+.proInfo .proCont .sellCont li i.cp {
+  height: 13px;
+  background-position: -201px -110px;
+}
+
+.proInfo .proCont .sellCont li i.zs {
+  width: 12px;
+  height: 12px;
+  background-position: -185px -128px;
+}
+
+.proInfo .proCont .sellCont li i.bh {
+  width: 13px;
+  background-position: -201px -128px;
+}
+
+.proInfo .proCont .sellCont li b {
+  float: right;
+  color: #330033;
+}
+
+/*小图*/
+
+.project .smallImg {
+  float: left;
+  width: 806px;
+  height: 360px;
+}
+
+.project .smallImg > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*分享关注及预约看房*/
+
+.project .share {
+  position: absolute;
+  top: 10px;
+  right: 32px;
+  padding: 3px 8px;
+}
+
+.project .share a {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  z-index: 6;
+}
+
+.project .share a b {
+  /*position: absolute; top:0px;left:25%;*/
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../img/icon.png) no-repeat;
+  vertical-align: middle;
+}
+
+.pg_yuyue {
+  width: 30px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.pg_fx {
+  width: 30px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.project .share a:hover {
+  width: 90px;
+}
+
+.project .share a b.gz {
+  top: 6px;
+  width: 24px;
+  height: 21px;
+  background-position: 0px -186px;
+}
+
+.project .share a b.yy {
+  background-position: -26px -186px;
+}
+
+.project .share a b.fx {
+  top: 3px;
+  background-position: -56px -186px;
+}
+
+.project .share a span {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+}
+
+/*分类标题*/
+
+.titleNav {
+  border-bottom: 2px solid #efdb9f;
+  margin-top: 20px;
+}
+
+.titleNav h3 {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 32px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.titleNav h3.current {
+  background: #efdb9f;
+  font-weight: bold;
+}
+
+/*楼盘动态*/
+
+/*.contBor{border-bottom:1px solid #ddd;}*/
+
+.buildSport {
+  padding: 30px 0 30px;
+}
+
+.buildSport h4 {
+  font-size: 18px;
+  color: #330033;
+  font-weight: 700;
+}
+
+.sportCont .sportList {
+  border-bottom: 1px solid #ddd;
+}
+
+.sportCont .sportList:last-child {
+  border: 0;
+}
+
+.sportCont .sportList dl {
+  padding: 32px 0;
+  width: 1180px;
+}
+
+.sportCont .sportList dl:first-child {
+  margin-right: 100px;
+}
+
+.sportCont .sportList dl:nth-child(odd) {
+  float: left;
+}
+
+/* .sportCont .sportList dl:nth-child(even){float:right;} */
+
+.sportCont .sportList dl dt {
+  float: left;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.sportCont .sportList dl dt img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.sportCont .sportList dl dd {
+  float: left;
+  width: 800px;
+}
+
+.sportCont .sportList dl dd h5 {
+  font-size: 15px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.sportCont .sportList dl dd h5 span {
+  display: inline-block;
+  width: 83px;
+  height: 24px;
+  line-height: 24px;
+  background: url(../img/icon.png) no-repeat -88px -186px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 12px;
+  text-shadow: 0px 0px 0px #ddd;
+}
+
+.sportCont .sportList dl dd p {
+  width: 100%;
+  max-height: 40px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  color: #666;
+}
+
+.sportCont .sportList dl dd p .overflow_hidden {
+  width: 700px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: inline-block;
+  display: -webkit-box;
+}
+
+.overflow_hidden_width340 {
+  display: inline-block;
+  max-width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*广告横幅*/
+
+.buildSport .art,
+.buildSport .art img {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+/*楼盘无动态*/
+
+.buildSport p.noSport {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buildSport p.noSport span {
+  display: inline-block;
+  margin-top: 12px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #666;
+}
+
+.buildSport p.noSport b {
+  display: inline-block;
+  width: 54px;
+  height: 56px;
+  background: url(../img/icon.png) no-repeat -75px -216px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+/*楼盘相册*/
+
+.buildSport .picture dl {
+  float: left;
+  margin-top: 18px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.buildSport .picture dl:last-child {
+  margin-right: 0;
+}
+
+.buildSport .picture dl dt,
+.picture dl dt a,
+.picture dl dt img {
+  display: block;
+  width: 195px;
+  height: 130px;
+}
+
+.buildSport .picture dl dd {
+  margin-top: 18px;
+  font-size: 14px;
+}
+/* 楼盘卖点 */
+.buildSport .sellpoint {
+  margin-top: 30px;
+}
+.buildSport .sellpoint .item {
+  margin-top: 18px;
+}
+.buildSport .sellpoint .item label {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+/*户型信息*/
+
+.buildSport .hxTitle {
+  margin-top: 30px;
+}
+
+.buildSport .hxTitle h5 {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buildSport .hxTitle h5 span {
+  font-weight: inherit;
+}
+
+.buildSport .hxTitle h5.current {
+  color: #330033;
+  font-weight: bold;
+  border-bottom: 2px solid #330033;
+}
+
+.buildSport .hxBox {
+  position: relative;
+  width: 74%;
+  height: 350px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.hxBox > a {
+  position: absolute;
+  top: 160px;
+  width: 72px;
+  height: 72px;
+  background: url(../img/icon.png) no-repeat;
+  z-index: 5;
+  zoom: 0.8;
+}
+
+.hxBox > a.goLeft {
+  left: 10px;
+  background-position: -29px -75px;
+}
+
+.hxBox > a.goRight {
+  right: 23px;
+  background-position: -108px -74px;
+}
+
+ul.imglist {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  white-space: nowrap;
+}
+
+ul.imglist li {
+  /*float:left;width:251px;*/
+  height: 260px;
+  margin-right: 25px;
+}
+
+ul.imglist li dl {
+  width: 100%;
+}
+
+ul.imglist li dl dt {
+  width: 195px;
+  height: 260px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+ul.imglist li dl dt i.saleStatus {
+  position: absolute;
+  left: 0;
+  padding: 3px 7px;
+  font-size: 12px;
+  background: #330033;
+  color: #fff;
+}
+
+ul.imglist li dl dd h6 {
+  font-size: 20px;
+  color: #fe0019;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+ul.imglist li dl dd p {
+  line-height: 24px;
+  font-size: 14px;
+  text-shadow: 0px 0px 1px #ddd;
+}
+
+ul.imglist li dl dd p span {
+  float: left;
+  font-size: 12px;
+}
+
+ul.imglist li dl dd p em {
+  float: right;
+  font-size: 12px;
+}
+
+ul.imglist li dl dd p i {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 12px;
+  text-align: center;
+  background: #fcfcfc;
+  border: 1px solid #333;
+}
+
+/*楼盘详情*/
+
+.houseDet ul.all {
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.houseDet ul.all li span {
+  float: left;
+  margin-right: 20px;
+  padding-top: 18px;
+  font-size: 14px;
+}
+
+.houseDet ul.all li span:last-child {
+  margin-right: 0;
+}
+
+.houseDet ul li label {
+  display: inline-block;
+  width: 60px;
+  color: #333;
+  vertical-align: top;
+}
+
+.houseDet ul li b {
+  display: inline-block;
+  width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+  vertical-align: bottom;
+}
+
+.houseDet ul.all a.btn {
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 0 auto 20px;
+  background: url(../img/icon.png) no-repeat;
+  color: #999999;
+}
+.houseDet ul.all a.btn:hover {
+  color: #333333;
+}
+.houseDet ul.all a.downIt {
+  background-position: -147px -147px;
+}
+.houseDet ul.all a.downIt:after {
+  /* 查看全部楼盘信息 */
+  content: '\67e5\770b\5168\90e8\697c\76d8\4fe1\606f';
+  position: relative;
+  display: block;
+  width: 120px;
+  top: 0;
+  left: -120px;
+}
+
+.houseDet ul.all a.upIt {
+  background-position: -147px -160px;
+}
+.houseDet ul.all a.upIt:after {
+  /* 点击收起 */
+  content: '\70b9\51fb\6536\8d77';
+  position: relative;
+  display: block;
+  width: 60px;
+  top: 0;
+  left: -60px;
+}
+
+.houseDet ul.intrLong li {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.houseDet ul.intrLong li b {
+  width: 800px;
+}
+
+.villa {
+  padding: 38px;
+  background: #fff;
+}
+
+.villa .upPhoto {
+  position: relative;
+  float: left;
+  width: 312px;
+  height: 416px;
+  overflow: hidden;
+}
+.villa .upPhoto .swiper-container {
+  height: 100%;
+}
+.villa .upPhoto .swiper-button-white {
+  position: absolute;
+  top: 260px;
+  width: 72px;
+  height: 72px;
+  background: url(../img/icon.png) no-repeat;
+  z-index: 5;
+  zoom: 0.7;
+}
+
+.villa .upPhoto .swiper-button-prev {
+  left: 10px;
+  background-position: -30px -74px;
+}
+
+.villa .upPhoto .swiper-button-next {
+  right: 10px;
+  background-position: -109px -74px;
+}
+.villa .upPhoto img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.villa .upPhoto > span.page {
+  border-radius: 3px;
+  position: absolute;
+  right: 126px;
+  line-height: 28px;
+  top: 378px;
+  background: rgba(51,0,51,0.8);
+  color: #fff;
+  padding: 0 5px;
+  z-index: 1;
+}
+.villa .upPhoto img + span {
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  background: #330033;
+  padding: 6px 20px;
+  color: #fff;
+}
+.villa .upPhoto .swiper-button-next.swiper-button-disabled,
+.villa .upPhoto .swiper-button-prev.swiper-button-disabled {
+  pointer-events: initial;
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: inherit;
+  pointer-events: unset;
+}
+.upPhoto ul.photoScro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.upPhoto ul.photoScro li {
+  position: relative;
+  float: left;
+  width: 312px;
+  height: 100%;
+}
+
+.upPhoto ul.photoScro li img {
+  width: 100%;
+  height: 416px;
+}
+
+.upPhoto ul.photoScro li a {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 6;
+  width: 96px;
+  height: 28px;
+  line-height: 28px;
+  background: #330033;
+  color: #fff;
+  text-align: center;
+}
+
+.villa .hxInfo {
+  float: left;
+  margin-left: 58px;
+}
+
+.villa .hxInfo h5 {
+  font-size: 18px;
+  color: red;
+  border-bottom: 1px solid #330033;
+}
+
+.villa .hxInfo h5 > b {
+  display: inline-block;
+  padding: 0px 8px;
+  height: 26px;
+  line-height: 26px;
+  margin-left: 4px;
+  border-radius: 4px;
+  background: #f5e8c3;
+  font-size: 12px;
+  color: #330033;
+}
+
+.villa .hxInfo h5 p {
+  float: right;
+  font-size: 12px;
+  color: #333;
+  margin-left: 66px;
+  padding-bottom: 10px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.villa .hxInfo h5 p b {
+  display: block;
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.villa .hxInfo .hxNews {
+  padding: 18px 0 0;
+}
+
+.villa .hxInfo .hxNews p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.villa .hxInfo .hxNews p:first-child {
+  font-size: 18px;
+}
+
+.villa .hxInfo .hxNews p span {
+  float: left;
+  text-align: left;
+  width: 33%;
+  font-size: 15px;
+}
+
+.villa .hxInfo .hxNews p span:nth-of-type(2) {
+  text-align: center;
+}
+
+.villa .hxInfo .hxNews p span:last-child {
+  text-align: right;
+}
+
+.villa .hxInfo .hxNews p label {
+  display: inline-block;
+  width: 70px;
+  color: #666;
+}
+
+.villa .hxInfo .hxNews p b {
+  display: inline-block;
+  color: #333;
+  /*width:76%;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.villa div.labelBox {
+  padding-bottom: 10px;
+  margin-top: 1%;
+}
+
+.villa div.labelBox label {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  margin-right: 15px;
+  border: 1px solid #330033;
+  color: #330033;
+  font-size: 12px;
+}
+
+.villa div.labelBox label:last-child {
+  margin-right: 0;
+}
+
+/*专题活动页*/
+
+.actCont {
+  width: 100%;
+}
+
+.actCont span {
+  display: block;
+  width: 100%;
+}
+
+.actCont span.ban1 {
+  height: 540px;
+  background: url(../img/actBanner1.jpg) center center no-repeat;
+}
+
+.actCont span.ban2 {
+  height: 702px;
+  background: url(../img/actBanner2.jpg) center center no-repeat;
+}
+
+.actCont span.ban3 {
+  height: 792px;
+  background: url(../img/actBanner3.jpg) center center no-repeat;
+}
+
+.actCont span.ban4 {
+  height: 614px;
+  background: url(../img/actBanner4.jpg) center center no-repeat;
+}
+
+.actCont span.ban5 {
+  height: 583px;
+  background: url(../img/actBanner5.jpg) center center no-repeat;
+}
+
+.actCont span.ban6 {
+  height: 718px;
+  background: url(../img/actBanner6.jpg) center center no-repeat;
+}
+
+.pg_quwei {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+input[type='checkbox'] + label {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+[id^='checkbox-'] + label {
+  background-color: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 7px;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[id^='checkbox-'] + label:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+[id='checkbox-1']:checked + label {
+  background-color: #f47164;
+  border: 1px solid #f47164;
+}
+
+.anchorBL {
+  display: none;
+}
+
+#huxing_view .imglist {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+/* 地图的搜索面板样式 */
+
+.tabBox {
+  position: absolute;
+  top: 172px;
+  right: 20px;
+  width: 325px;
+}
+
+.tabBox .aroundType {
+  width: 100%;
+  height: 40px !important;
+  font-size: 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.tabBox .aroundType li {
+  cursor: pointer;
+  display: inline-block;
+  width: 20%;
+  line-height: 40px;
+  text-align: center;
+  background: #f5f5f6;
+  color: #333333;
+  font-size: 14px;
+}
+
+.tabBox .aroundType li.selectTag {
+  position: relative;
+  background: #fff;
+  font-weight: bold;
+  color: #65318e;
+}
+
+.tabBox .aroundType li.selectTag:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #65318e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tabBox .itemTagBox {
+  background: #fff;
+  padding: 15px 0;
+}
+
+.tabBox .itemTagBox li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tabBox .itemTagBox li.selectTag {
+  color: #65318e;
+}
+
+.tabBox .itemTagBox li:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.aroundList {
+  height: 275px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.aroundList .itemBox li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.aroundList .itemBox li:hover {
+  background: rgb(246, 246, 246);
+}
+
+.contentBox {
+  padding: 0 25px;
+}
+
+.contentBox .itemContent {
+  margin-bottom: 12px;
+}
+
+.contentBox .itemInfo {
+  margin-bottom: 10px;
+}
+
+.contentBox .phoneNumber,
+.contentBox .itemInfo {
+  color: #666666;
+}
+
+.contentBox .itemContent span i,
+.contentBox .itemContent span em {
+  font-weight: bold;
+}
+
+.contentBox .itemContent span:last-child {
+  float: right;
+}

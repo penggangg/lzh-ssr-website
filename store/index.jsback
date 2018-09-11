@@ -1,0 +1,151 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default () => new Vuex.Store({
+  state: {
+    counter: 0,
+    seo: 'none',
+    searchInfo: {
+      city: '', // 城区
+      busines: '', // 商圈
+      price: '', // 售价
+      room: '', // 居室
+      area: '', // 面积
+      features: [], // 特色
+      toward: '', // 朝向
+      decoration: '', // 装修
+      product: '', // 产品
+      purpose: '' // 用途
+    },
+    keyword: '', // 搜索关键字
+    busines: [] // 商圈
+  },
+  getters: {
+    searchResult: state => {
+      let result = ''
+      // 返回路由拼接规则
+      for (let [k, v] of Object.entries(state.searchInfo)) {
+        if (k !== 'features' && v) {
+          result += `${v.districtId}_`
+        } else if (k === 'features' && v.length > 0) {
+          for (let item of v) {
+            result += item.districtId
+          }
+          result += '_'
+        }
+      }
+      return result.slice(0, result.length - 1)
+    },
+    getPath: state => (id, name) => {
+      // console.log('ceshi')
+
+      let result = ''
+      // 返回路由拼接规则
+      for (let [k, v] of Object.entries(state.searchInfo)) {
+        // if (k !== 'features' && name !== 'features' && v) {
+        if (k !== 'features' && name !== 'features') {
+          if (k === name) {
+            result += `${id}_`
+            // console.log('ceshi:  11  ' + result)
+          } else {
+            if (v) {
+              result += `${v.districtId}_`
+            }
+
+            // console.log('ceshi:  12  ' + result)
+          }
+          // console.log('ceshi:  13  ' + result)
+        } else if (k === 'features' && v.length > 0) {
+          if (k === name) {
+            for (let item of v) {
+              result += item.districtId
+            }
+            result += `${id}_`
+            // console.log('ceshi:  2 ' + result)
+          } else {
+            for (let item of v) {
+              result += item.districtId
+            }
+            result += '_'
+            // console.log('ceshi: 3 ' + result)
+          }
+        }
+      }
+
+      return result.slice(0, result.length - 1)
+    },
+    getLimitPath: state => (name) => {
+      // console.log('ceshi')
+
+      let result = ''
+      // 返回路由拼接规则
+      for (let [k, v] of Object.entries(state.searchInfo)) {
+        if (k !== 'features' && name !== 'features') {
+          if (k !== name && v) {
+            result += `${v.districtId}_`
+          }
+        } else if (k === 'features' && v.length > 0) {
+          if (k !== name) {
+            for (let item of v) {
+              result += item.districtId
+            }
+            result += '_'
+          }
+        }
+      }
+
+      return result.slice(0, result.length - 1)
+    }
+  },
+  mutations: {
+    increment(state) {
+      state.counter++
+    },
+    changeSort(state, str) {
+      state.seo += `_${str}`
+    },
+    cityInfo(state, city) {
+      state.searchInfo.city = city
+    },
+    businesInfo(state, busines) {
+      // state.searchInfo.busines.districtId = busines.bizcircleId
+      // state.searchInfo.busines.districtName = busines.bizcircleName
+      if (busines) {
+        state.searchInfo.busines = {
+          districtId: busines.bizcircleId,
+          districtName: busines.bizcircleName
+        }
+      }
+      // state.searchInfo.busines = busines
+    },
+    priceInfo(state, price) {
+      state.searchInfo.price = price
+    },
+    roomInfo(state, room) {
+      state.searchInfo.room = room
+    },
+    areaInfo(state, area) {
+      state.searchInfo.area = area
+    },
+    featuresInfo(state, features) {
+      state.searchInfo.features = features
+    },
+    towardInfo(state, toward) {
+      state.searchInfo.toward = toward
+    },
+    decorationInfo(state, decoration) {
+      state.searchInfo.decoration = decoration
+    },
+    productInfo(state, product) {
+      state.searchInfo.product = product
+    },
+    purposeInfo(state, purpose) {
+      state.searchInfo.purpose = purpose
+    },
+    keyWord(state, keyword) {
+      state.keyword = keyword
+    }
+  }
+})

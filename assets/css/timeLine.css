@@ -1,0 +1,30 @@
+@charset "utf-8";
+body,h2,ul,h3{padding:0;margin:0;}
+ul{list-style:none outside none;}
+/* timeline */
+.timeline{
+  background:url("../img/line4.png") repeat-y 450px 0;overflow:hidden;
+  position:relative;
+  /* height:100px; */
+  width:100%;
+}
+.timeline-date{overflow:hidden;position:relative;}
+.timeline-date h2{font-size:20px;height:87px;margin-bottom:20px;}
+.timeline-date h2 b{margin-left:10px;font-size:14px;}
+.timeline-date h2 span{display:inline-block;width:23px;height:23px;border-radius:23px;
+	background:#efdb9f;margin-left:39px;margin-right:20px;vertical-align:middle;margin-top:-8px;}
+.timeline-date ul{margin-left:400px;}
+.timeline-date ul li{background:url("../img/icon7.png") no-repeat 44px 6px;zoom:1;height:58px;}
+.timeline-date ul li dl{margin-top:-5px;}
+.timeline-date ul li dl.right{float:left;display:block;margin-left:82px;margin-top:-6px;
+	background-color:#f2e2b2;height:40px;border-radius:4px;}
+.timeline-date ul li dl.right b.iconT{display:inline-block;margin-top:-2px;margin-left:-8px;
+ width: 0;height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 14px solid #f2e2b2;vertical-align:middle;}
+.timeline-date ul li.leftList dl.right{margin-left:-196px;}
+.timeline-date ul li.leftList dl.right b.iconT{float:right;margin-top:8px;margin-right:-8px;
+	border-right:0;border-left: 14px solid #f2e2b2;}
+.timeline-date ul li dl span{position:relative;z-index:12;display:inline-block;font-size:14px;
+	padding:0px 20px 0px 10px;color:#666;line-height:40px;vertical-align:middle;}

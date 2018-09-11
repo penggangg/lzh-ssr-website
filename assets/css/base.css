@@ -1,0 +1,118 @@
+/*预设*/
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0;font-weight: normal; -webkit-tap-highlight-color: rgba(0,0,0,0);outline:none;}
+table {font-size: 12px; border-collapse:collapse; border-spacing:0 }
+html,body{ font-family: "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, Tahoma, Arial, sans-serif;
+ color:#333; background:#fff;
+-webkit-font-smoothing: antialiased; /*chrome、safari*/
+-moz-osx-font-smoothing: grayscale;/*firefox*/
+cursor: default;
+font-size: 14px;
+}
+body{min-width: 1200px;
+  position: relative;}
+ul li,ol li{list-style:none;}
+a{ text-decoration: none!important;outline:none; blr:expression(this.onFocus=this.blur());color:#666;}
+a:hover{ text-decoration:none;cursor:pointer;}
+i,em{font-style: normal !important;font-weight:normal;}
+img{border:none;}
+b{font-weight:normal;}
+input[type=button],input[type=submit],input[type=reset],select{cursor: pointer;
+  font-family: "Microsoft YaHei";}
+input{font-size:12px;border:none;font-family: "Microsoft YaHei";}
+input[name=text]{border:1px solid #ddd;background:none;}
+input[type=file]:focus {
+  border: 1px solid #ddd;
+  outline:none;cursor: pointer;
+}
+input[type=button]:hover{background:red;}
+input,button,select,textarea{outline:none;}
+select{font-family: "Microsoft YaHei";
+    border:1px solid #ddd;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-left:2px;font-family: "Microsoft YaHei";
+    background:url(../img/arrow.png) no-repeat scroll 144px center transparent;
+    background-color:#f9f9f9;color:#666;text-indent:2px;
+    height:25px;line-height:25px;/*vertical-align: middle;*/}
+select::-ms-expand { display:none;border:none;}
+/*清除浮动*/
+.clearfix:after{content:""; display:block; clear:both; height:0; line-height:0; visibility:hidden;}
+.clearfix{zoom:1;}
+.wrapper{width:1200px;margin:0 auto;}
+.container{width:1180px;margin:0 auto;font-family: "Microsoft YaHei";}
+textarea{resize:none;resize:none;border:1px solid #ddd;
+  border-radius:4px;text-indent:4px !important;font-size:14px !important;font-family: "Microsoft YaHei" !important;}
+input[type="checkbox"]{display:inline-block;
+         appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+     -o-appearance: none;margin-right:4px;
+     /*margin-right:4px;width:14px;height:14px;
+  background:url(../img/icon.png) no-repeat -94px -0px;
+  font-size:0;
+  vertical-align: middle;border: none;outline:none;box-shadow:none;
+  cursor:pointer;*/
+}
+
+input[type="checkbox"]:checked{
+  background-position:-110px -0px;
+}
+/*多选*/
+a.checkBox{position:relative;}
+a.checkBox input[type=checkbox]{width:11px;height:11px;vertical-align:middle;}
+a.checkBox label{position:absolute;top:3px;left:0;width: 11px;height: 11px;
+  background:url(../img/icon.png) no-repeat -128px -0px;cursor:pointer;
+}
+a.checkBox label.filted{background-position:-144px -0px;}
+/*单选*/
+a.radioParent{position:relative;}
+a.radioParent span{position:absolute;top:3px;left:0;background:url(../img/icon.png) no-repeat -132px -284px;
+  height: 12px !important;font-size:0;z-index:4;border: none;outline:none;box-shadow:none;
+  width: 12px !important;cursor:pointer;}
+a.radioParent span.clicked{background:url(../img/icon.png) no-repeat -115px -284px;}
+a.radioParent>input[type=radio]{display:inline-block;opacity: 0;margin-right:4px;}
+/*大单选图标*/
+a.radioBig span{background:url(../img/icon.png) no-repeat -165px -307px;
+  width:14px !important;height:14px !important;}
+a.radioBig>input[type=radio]{width:14px;height:14px;}
+a.radioBig span.clicked{background:url(../img/icon.png) no-repeat -144px -307px;
+  width:14px !important;height:14px !important;}
+
+.noFind{display:block;width:500px;height:206px;margin:80px auto 0;}
+.returnIndex{display:block;width:100px;height:24px;line-height:24px;
+  text-decoration:underline !important;
+  margin:40px auto 0;color:#330033;text-align:center;}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button:vertical {
+  display: none
+}
+
+::-webkit-scrollbar-corner,::-webkit-scrollbar-track {
+  background-color: #e2e2e2
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgba(0,0,0,.3)
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgba(0,0,0,.35)
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background-color: rgba(0,0,0,.38)
+}
+
+/* 地图的周边详情列表 */
+#r-result ol{height: 335px!important;overflow: auto;}
+#r-result ol li a{display: none!important;}
+#r-result>div>div:last-child{margin-top: 0!important;}
+#r-result>div>div:last-child div{display: none!important;}

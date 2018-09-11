@@ -1,0 +1,934 @@
+/*头部*/
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    /*    background: linear-gradient(top, rgba(0,0,0,0.8), transparent);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.8), transparent);
+background: -o-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');
+*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.head .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+
+.head .banner .imgBox {
+    width: 100%;
+    height: 480px;
+}
+
+.head .banner .imgBox li {
+    background: url("../img/sh4.jpg") center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1220px;
+    height: 480px;
+    background-size: cover;
+}
+.head .banner .imgBox li.oversea{
+  background: url("../img/3.jpg") center center no-repeat;
+}
+.head .top {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    padding: 10px 0;
+    /*background: linear-gradient(top, rgba(0,0,0,0.8), transparent);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.8), transparent);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');*/
+    /*background:rgba(0,0,0,0.5);*/
+}
+
+.head .top .logo {
+    float: left;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.head .top .logo>a {
+    display: inline-block;
+    width: 191px;
+
+}
+
+.head .top .logo a>img {
+    display: block;
+    width: 100%;
+    height: 59px;
+}
+
+.head .top .logo span {
+    display: inline-block;
+}
+
+.head .top .logo span a {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.head .top .logo span a.now {
+    color: #333;
+}
+
+.head .top .nav {
+    float: right;
+    /* margin-right: 50px; */
+    text-shadow: 0px 0px 0px #ddd;
+}
+
+.head .top .nav .tel {
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 38px;
+}
+
+.head .top .nav .tel span,
+.head .top .nav .tel p {
+    display: inline-block;
+}
+
+.head .top .nav .tel p {
+    margin-left: 30px;
+}
+
+.head .top .nav .tel p a {
+    color: #fff;
+}
+
+.head .top .nav .tel p a:first-child {
+    padding-right: 10px;
+}
+
+.head .top .nav .tel p a:last-child {
+    padding-left: 10px;
+}
+
+.head .top .nav li {
+    float: left;
+    margin-right: 38px;
+}
+
+.head .top .nav li:last-child {
+    margin-right: 0;
+}
+
+.head .top .nav li>a {
+    font-size: 16px;
+    font-family: "微软雅黑", "arial";
+    font-weight: 700;
+    -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -ms-text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.head .top .nav li>a.current {
+    color: #fff;
+}
+
+
+/*搜索条件*/
+
+.head .search {
+    position: absolute;
+    top: 156px;
+    right: 0;
+    height: 30px;
+    left: 50%;
+    margin-left: -605px;
+    z-index: 99;
+}
+
+.searchCont {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.searchCont>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.searchCont>img.bannerSize {
+    width: 599px;
+    height: 58px;
+}
+
+.search_form {
+    width: 740px;
+    margin: 40px 0px 0px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.search_form .genre {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.search_form .genre ul {
+    position: relative;
+    float: left;
+    margin: 0 10px;
+}
+
+.search_form .genre ul>span.trans {
+    position: absolute;
+    bottom: -4px;
+    left: 18px;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.search_form .genre li {
+    float: left;
+    margin-right: 32px;
+    font-size: 14px;
+    color: #c6c6c6;
+    cursor: pointer;
+}
+
+.search_form .genre li.lei {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.search_form .genre p.other {
+    float: right;
+}
+
+.search_form .genre p.other a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.search_form .genre p.other a b {
+    display: inline-block;
+    margin-right: 10px;
+    background: url(../img/icon.png) no-repeat;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+.search_form .genre p.other a b.dw {
+    width: 12px;
+    height: 16px;
+    background-position: -0px 0px;
+}
+
+.search_form .genre p.other a b.zf {
+    width: 16px;
+    height: 16px;
+    background-position: -25px 0px;
+}
+
+.searchTerm {
+    height: 60px;
+    background: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.searchTerm input {
+    display: inline-block;
+    line-height: 60px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.searchTerm input[name=text] {
+    width: 600px;
+    height: 60px;
+    text-indent: 20px;
+    font-size: 16px;
+    border: 0;
+}
+
+.searchTerm input[type=button] {
+    width: 140px;
+    height: 60px;
+    border-radius: 0;
+    border-bottom-right-radius: 4px;
+    font-size: 16px;
+    background: #efdb9f;
+    color: #330033;
+}
+
+.searchCont>p {
+    padding-top: 15px;
+    color: #f5edd6;
+    padding: 7px 0;
+    padding-left: 30px;
+    /*background: linear-gradient(top, rgba(0,0,0,0.4), transparent);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.4), transparent);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.4), transparent);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.4), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');
+*/
+    background: rgba(0, 0, 0, 0.1);
+    width: 710px;
+}
+
+.searchCont>p a {
+    color: #f5edd6;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+
+/*服务*/
+
+.server {
+    margin-top: 62px;
+}
+
+.server dl {
+    float: left;
+    margin: 0 25px;
+}
+
+.server dl:first-child {
+    margin-left: 80px;
+}
+
+.server dl dt {
+    float: left;
+}
+
+.server dl dt.overAll {
+    width: 58px;
+}
+
+.server dl dt.real {
+    width: 64px;
+}
+
+.server dl dt.serve {
+    width: 56px;
+}
+
+.server dl dt.highEnd {
+    width: 65px;
+    ;
+}
+
+.server dl dt img {
+    display: block;
+    width: 100%;
+    height: 65px;
+}
+
+.server dl dd {
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.server dl dd span {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #666;
+}
+
+
+/*二手豪宅*/
+
+.mansion {
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.mansion>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+}
+
+.mansion>div {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.mansion h3 {
+    padding-top: 80px;
+}
+
+.mansion h3 img {
+    display: block;
+    width: 117px;
+    height: 27px;
+    margin: 0 auto;
+}
+
+.mansion>div>p {
+    position: relative;
+    font-size: 16px;
+    margin: 22px auto 46px;
+    color: #2c0043;
+    text-shadow: 0px 0px 0px #ddd;
+}
+
+.mansion>div>p>a {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 12px;
+    color: #2c0043;
+    text-shadow: 0px 0px 0px #ddd;
+}
+
+
+/*.mansion .imgShow{padding-bottom:112px;}*/
+
+.mansion .imgShow dl {
+    position: relative;
+    float: left;
+    width: 285px;
+    margin-right: 20px;
+}
+
+.mansion .imgShow dl:last-child {
+    margin-right: 0;
+}
+
+.mansion .imgShow dl dt a {
+    display: block;
+    width: 100%;
+}
+
+.mansion .imgShow dl dt img {
+    display: block;
+    width: 100%;
+    height: 190px;
+}
+
+.mansion .imgShow dd {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0;
+    text-align: start;
+    color: #ddd;
+    font-size: 12px;
+    /*background: linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.mansion .imgShow dd p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #fff
+}
+
+.mansion .imgShow dd p:first-child {
+    margin-bottom: 5px;
+}
+
+.mansion .imgShow dd p span {
+    float: left;
+    max-width: 65%;
+}
+
+.mansion .imgShow dd p b {
+    float: right;
+    /*max-width:30%;*/
+}
+
+.mansion .imgShow dd p span,
+.mansion .imgShow dd p b {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mansion .imgShow dd p span.name {
+    font-size: 14px;
+    color: #fff;
+}
+
+.mansion .imgShow dd p b.price {
+    font-size: 16px;
+    color: #efdb9f;
+}
+
+
+/*一手豪宅*/
+
+.mansion .oneImgShow {
+    padding-bottom: 0;
+}
+
+.mansion .oneImgShow .left {
+    float: left;
+    width: 729px;
+}
+
+.mansion .oneImgShow dl,
+.oneImgShow dt,
+.oneImgShow dd {
+    width: 100%;
+    margin-right: 0;
+}
+
+.mansion .oneImgShow dl {
+    position: relative;
+}
+
+.mansion .oneImgShow dd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px 0;
+    text-align: start;
+    color: #fff;
+    /*    background: linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');
+*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.mansion .oneImgShow .left dt img {
+    width: 100%;
+    height: 486px;
+}
+
+.mansion .oneImgShow .left dd p span.name,
+.mansion .oneImgShow .left dd p b.price {
+    font-size: 24px;
+}
+
+.mansion .oneImgShow .right {
+    float: right;
+    width: 345px;
+}
+
+.mansion .oneImgShow .right dl:first-child {
+    margin-bottom: 26px;
+}
+
+.mansion .oneImgShow .right dt img {
+    width: 100%;
+    height: 230px;
+}
+
+.mansion .oneImgShow .right dd p span.name,
+.mansion .oneImgShow .right dd p b.price {
+    font-size: 16px;
+}
+
+
+/*豪宅顾问*/
+
+.adviser {
+    padding-bottom: 60px;
+}
+
+.mansion .adviser dl {
+    float: left;
+    width: 230px;
+    margin-right: 60px;
+}
+
+.mansion .adviser dl:last-child {
+    margin-right: 0;
+}
+
+.mansion .adviser dt,
+.mansion .adviser dt a,
+.mansion .adviser dt img {
+    width: 120px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.mansion .adviser dd {
+    padding-top: 30px;
+}
+
+.mansion .adviser dd div a {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    text-shadow: 0px 0px 0px #ddd;
+    font-family: "微软雅黑";
+    color: #333;
+}
+
+.mansion .adviser dd div a b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 20px;
+    line-height: 20px;
+    background: #f7f3e3;
+    font-size: 12px;
+    color: #e5b62a;
+    font-family: "微软雅黑";
+}
+
+.mansion .adviser dd div p {
+    font-size: 14px;
+    color: #999;
+    margin: 16px 0;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+
+.mansion .adviser dd div p label {
+    display: inline-block;
+    width: 60px;
+    font-size: 12px;
+    text-align: left;
+    color: #333;
+    vertical-align: top;
+}
+
+.mansion .adviser dd div strong {
+    display: inline-block;
+    width: 146px;
+    font-size: 12px;
+    color: #666;
+    vertical-align: top;
+    text-align: left;
+}
+
+.mansion .adviser dd div span {
+    font-size: 20px;
+    color: #2c0043;
+}
+
+.mansion .adviser dd div span i {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background: url(../img/icon.png) no-repeat -143px -23px;
+    margin-right: 10px;
+}
+
+
+/*海外房产*/
+
+
+/*banner*/
+
+.actWrap {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.actBanner {
+    width: 1010px;
+}
+
+.actBanner img.actSize {
+    width: 691px;
+    height: 44px;
+}
+
+.actBanner>p {
+    width: 100%;
+    line-height: 30px;
+    margin-top: 192px;
+    /*background:none;*/
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*我们的优势*/
+
+.ourAdv {
+    background: #f6f6f6;
+}
+
+.ourAdv h3 img {
+    width: 140px;
+    height: 30px;
+}
+
+.ourAdv .oneRow {
+    margin-bottom: 40px;
+}
+
+.ourAdv .oneRow dl {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.ourAdv .oneRow dl:last-child {
+    margin-right: 0;
+}
+
+.ourAdv .oneRow dt a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ourAdv .oneRow dt a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ourAdv .oneRow dd {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+
+.ourAdv .oneRow dd h5 {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-top: 68px;
+    margin-bottom: 54px;
+    border-bottom: 1px solid #ddd;
+    width: 66px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.ourAdv .oneRow dd p {
+    line-height: 20px;
+    margin: 0 26px;
+    font-size: 12px;
+}
+
+
+/*美国购房流程图*/
+
+.flow>img {
+    display: block;
+    width: 1009px;
+    height: 345px;
+    margin-top: 25px;
+}
+
+
+/*美国豪宅分布地图*/
+
+.dis dl {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+.dis dl:last-child {
+    margin-right: 0;
+}
+
+
+/*.dis dl.longImg{width:792px;}*/
+
+.dis dl a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+
+.dis dl dt,
+.dis dl dt img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.dis dl dd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    /*    background: linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.8), transparent);
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000',endColorStr='#3b3b3a',gradientType='0');*/
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+}
+
+.dis dl dd.moreCity {
+    flex: 1;
+    -webkit-flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background: none;
+    padding: 0;
+}
+
+
+/*固定右侧联系顾问按钮*/
+
+.linkBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    z-index: 1000;
+    width: 78px;
+    height: 112px;
+    background: #efdb9f;
+    text-align: center;
+    cursor: pointer;
+}
+
+.linkBtn span {
+    display: block;
+    width: 35px;
+    height: 31px;
+    background: url(../img/icon.png) no-repeat -76px -279px;
+    margin: 30px auto 10px;
+}
+
+.linkBtn p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.history_cot {
+    background: #fff;
+    border-radius: 4px;
+    /*margin-top: 2px;*/
+    padding-left: 15px;
+    font-size: 14px;
+    padding-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.history_cot ul {
+    max-height: 168px;
+}
+
+.history_cot span {
+    color: #3089dc;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.history_cot ul li {
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.searchTerm {
+    margin-bottom: 2px;
+}
+
+.autocomplete-suggestions {
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: scroll;
+}
+
+.autocomplete-suggestion {
+    font-size: 16px;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background: #ccc;
+}
+/* 推荐顾问的扫码拨号 */
+.mansion .adviser dd div span{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+.mansion .adviser dd div span .footer_sao_index{
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 1px 4px;
+}
+.mansion .adviser dd div span.four_ewm{
+    position: absolute;
+    right: -16px;
+    top: 30px;
+    border:8px solid #fff;
+    border-radius: 10px;
+    /* display: none; */
+    box-shadow: 1px 1px 3px #888888;
+}
+.mansion .adviser dd div span.four_ewm div{
+  height: 80px;
+}
+.mansion .adviser dd div span.four_ewm.four_ewms{
+    position: absolute;
+    right: -16px;
+    top:30px;
+    /* display: none; */
+}
+/* 首页导航的滑过效果 */
+.current_line{
+    position: absolute;
+    height: 5px;
+    width: 21px;
+    border-radius: 3px;
+    background: #fff;
+    bottom: -10px;
+    left: 5px;
+    transition: all .3s;
+}
